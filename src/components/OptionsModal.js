@@ -39,7 +39,7 @@ function OptionsModal(props) {
 			if (index === -1) {
 				props.renameTrack(selectedTrack, newName);
 			} else {
-				return RenderToast('Title should not contain "/"');
+				return RenderToast('El título no puede contener "/"');
 			}
 		}
 		setRenameModal(false);
@@ -62,7 +62,7 @@ function OptionsModal(props) {
 	}
 
 	const modalTitle = `${selectedTrack.title}  •  ${selectedTrack.artist}`;
-	const optionText = playlistRemoveOption ? 'Remove from Playlist' : 'Add to Playlist';
+	const optionText = playlistRemoveOption ? 'Remover desde Playlist' : 'Agregar a Playlist';
 	const optionFunc = playlistRemoveOption ? onRemoveFromPlaylist : onAddToPlaylist;
 
 	return (
@@ -82,14 +82,14 @@ function OptionsModal(props) {
 					<ModalTitle numberOfLines={1}>{modalTitle}</ModalTitle>
 				</TextWrapper>
 				<ListItem title={optionText} iconProps={icons.playlist} onPress={optionFunc} />
-				<ListItem title="Share" iconProps={icons.share} onPress={onShare} />
+				<ListItem title="Compartir" iconProps={icons.share} onPress={onShare} />
 				<ListItem
-					title="Rename"
+					title="Renombrar"
 					iconProps={icons.rename}
 					onPress={() => setRenameModal(true)}
 				/>
 				<ListItem
-					title="Delete"
+					title="Borrar"
 					iconProps={icons.delete}
 					onPress={() => setDialogVisible(true)}
 				/>
@@ -97,16 +97,16 @@ function OptionsModal(props) {
 					isVisible={isRenameModalVisible}
 					onPressSave={onPressRename}
 					onPressCancel={() => setRenameModal(false)}
-					inputPlaceholder="New title"
-					title="Rename Track"
+					inputPlaceholder="Nuevo título"
+					title="Renombrar pista"
 					name={selectedTrack.title}
-					saveButtonTitle="Rename"
+					saveButtonTitle="Renombrar"
 				/>
 				<ConfirmDialog
-					title="Confirm Delete"
-					buttonTitle="Delete"
+					title="Confirmar Borrado"
+					buttonTitle="Borrar"
 					cancelButton
-					description="Are you sure you want to delete this track?"
+					description="¿Está seguro que quiere borrar esta pista?"
 					onCancel={() => setDialogVisible(false)}
 					onConfirm={onDeleteConfirm}
 					isVisible={isDialogVisible}

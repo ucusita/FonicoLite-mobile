@@ -18,7 +18,7 @@ export const settings = {
 	},
 	about: {
 		title: 'About',
-		subtitle: 'Info about SoundSpice'
+		subtitle: 'Info about FonicoLite'
 	},
 	excludeFoldersDialog: {
 		title: 'Folders to skip',
@@ -29,5 +29,5 @@ export const settings = {
 		title: 'Confirm Cache Purge',
 		subtitle: 'Are you sure you want to clear covers cache?'
 	},
-	share: 'Share SoundSpice'
+	share: 'Share FonicoLite'
 };

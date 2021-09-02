@@ -7,8 +7,8 @@ export const getStoragePermission = async () => {
 			PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE
 		],
 		{
-			title: 'SoundSpice Storage Permission',
-			message: 'SoundSpice needs to access your storage'
+			title: 'FonicoLite Storage Permission',
+			message: 'FonicoLite needs to access your storage'
 		}
 	);
 
@@ -17,7 +17,7 @@ export const getStoragePermission = async () => {
 	} else {
 		Alert.alert(
 			'Permission required',
-			'Allow SoundSpice to access your storage',
+			'Allow FonicoLite to access your storage',
 			[{ text: 'OK', onPress: async () => await getStoragePermission() }],
 			{ cancelable: false }
 		);

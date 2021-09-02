@@ -42,7 +42,7 @@ function InputDialog(props) {
 				value={input}
 				autoFocus
 			/>
-			<Dialog.Button label="Cancel" color={contrast} onPress={onCancel} />
+			<Dialog.Button label="Cancelar" color={contrast} onPress={onCancel} />
 			<Dialog.Button label={saveButtonTitle} color={foreground} onPress={onSave} />
 		</Dialog.Container>
 	);

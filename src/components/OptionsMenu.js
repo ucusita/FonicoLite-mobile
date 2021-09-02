@@ -29,7 +29,7 @@ function OptionsMenu(props) {
 		} else if (isConnected) {
 			props.resetLyrics();
 			navigation.navigate('lyrics');
-		} else RenderToast('No internet connection');
+		} else RenderToast('No hay conexión internet');
 	}
 
 	function onShare() {
@@ -46,13 +46,13 @@ function OptionsMenu(props) {
 		<View>
 			<Menu ref={menuRef} button={button}>
 				<MenuItem onPress={onAddToPlaylist} textStyle={styles.menuItemText}>
-					Add to playlist
+					Agregar al playlist
 				</MenuItem>
 				<MenuItem onPress={onSeeLyrics} textStyle={styles.menuItemText}>
-					See lyrics
+					Ver letras
 				</MenuItem>
 				<MenuItem onPress={onShare} textStyle={styles.menuItemText}>
-					Share
+					Compartir
 				</MenuItem>
 			</Menu>
 		</View>

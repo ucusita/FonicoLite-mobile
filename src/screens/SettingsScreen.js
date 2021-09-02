@@ -35,14 +35,14 @@ function SettingsScreen(props) {
 
 	function onPressReport() {
 		Linking.openURL(
-			'mailto:faisalarshed28@gmail.com?subject=SoundSpice bug report&body=Device Manufacturer %26 Model: \n\n%0D%0AYour issue: %20'
+			'mailto:faisalarshed28@gmail.com?subject=FonicoLite bug report&body=Device Manufacturer %26 Model: \n\n%0D%0AYour issue: %20'
 		);
 	}
 
 	function onPressShare() {
 		Share.open({
 			message:
-				'Hey! Check out SoundSpice\nhttps://play.google.com/store/apps/details?id=com.vynilla'
+				'Hey! Check out FonicoLite\nhttps://play.google.com/store/apps/details?id=com.infotronica.fonicolite'
 		});
 	}
 

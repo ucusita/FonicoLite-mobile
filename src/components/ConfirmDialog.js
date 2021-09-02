@@ -16,7 +16,7 @@ function ConfirmDialog(props) {
 			<DialogTitle numberOfLines={2}>{title}</DialogTitle>
 			<DialogDescription>{description}</DialogDescription>
 			{cancelButton ? (
-				<Dialog.Button label="Cancel" color={contrast} onPress={onCancel} />
+				<Dialog.Button label="Cancelar" color={contrast} onPress={onCancel} />
 			) : null}
 			<Dialog.Button label={buttonTitle} color={foreground} onPress={props.onConfirm} />
 		</Dialog.Container>

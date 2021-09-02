@@ -11,7 +11,7 @@ export default function (e) {
 
 function mailError(e) {
 	Linking.openURL(
-		`mailto:faisalarshed28@gmail.com?subject=SoundSpice error log&body=LOG\n\n${JSON.stringify(
+		`mailto:faisalarshed28@gmail.com?subject=FonicoLite error log&body=LOG\n\n${JSON.stringify(
 			e
 		)}`
 	);

@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components/native';
 import MapView, { Marker } from 'react-native-maps';
-import stations from '../../assets/stations.json';
+import {stations} from '../../assets/stations.js';
 
 function Radio(props) {
+	// alert (stations);
 	function renderMarker(station, i) {
 		return (
 			<Marker
-				coordinate={{ longitude: station.geo[0], latitude: station.geo[1] }}
+				coordinate={{ longitude: station.latitude, latitude: station.longitude }}
 				key={i}
 				tracksViewChanges={false}
 				zIndex={5}>
@@ -18,7 +19,7 @@ function Radio(props) {
 
 	return (
 		<MapView style={{ flex: 1 }} minZoomLevel={5}>
-			{/* {stations.map((station, i) => renderMarker(station, i))} */}
+			{stations.map((station, i) => renderMarker(station, i))}
 		</MapView>
 	);
 }

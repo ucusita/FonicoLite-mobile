@@ -14,11 +14,11 @@ function AboutScreen(props) {
 
 	return (
 		<Wrapper>
-			<Heading>SoundSpice</Heading>
-			<DetailTrans>Version 3.2.0</DetailTrans>
+			<Heading>FonicoLite</Heading>
+			<DetailTrans>Version 0.0.1</DetailTrans>
 			<Heading>Developed by</Heading>
-			<DetailTrans>Faisal Arshed</DetailTrans>
-			<Detail>Source code available under GNU GPL at</Detail>
+			<DetailTrans>Marcelo Roldán</DetailTrans>
+			<Detail>Source code adapted from available GNU GPL</Detail>
 			<TouchableOpacity onPress={() => Linking.openURL(repoUrl)}>
 				<Link>Github</Link>
 			</TouchableOpacity>

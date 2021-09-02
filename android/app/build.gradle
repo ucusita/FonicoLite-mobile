@@ -135,7 +135,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.vynilla"
+        applicationId "com.infotronica.fonicolite"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 6

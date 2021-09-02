@@ -35,7 +35,7 @@ export const getMedia = () => async (dispatch) => {
 };
 
 const getMediaWithCovers = async () => {
-	const coverFolder = RNFetchBlob.fs.dirs.DocumentDir + '/.soundspice';
+	const coverFolder = RNFetchBlob.fs.dirs.DocumentDir + '/.FonicoLite';
 	let results = await RNAndroidAudioStore.getAll({
 		...options,
 		cover: true,

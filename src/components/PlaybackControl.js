@@ -37,7 +37,7 @@ function PlaybackControl(props) {
 	}
 
 	function onLoopPress() {
-		RenderToast(`Loop ${loop ? 'all tracks' : 'this track'}`);
+		RenderToast(`Bucle ${loop ? 'todas las pistas' : 'esta pista'}`);
 		props.setLoop(!loop);
 	}
 

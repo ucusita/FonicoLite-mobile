@@ -34,7 +34,7 @@ function AlbumsScreen(props) {
 	if (props.albums.length === 0) {
 		return (
 			<EmptyWrapper>
-				<Text>Oops! Nothing to show here</Text>
+				<Text>Todavía no tengo nada para mostrarte</Text>
 			</EmptyWrapper>
 		);
 	}

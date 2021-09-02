@@ -16,14 +16,14 @@ function AddToPlayList(props) {
 
 	function addSong(playlistTitle, song) {
 		props.addToPlaylist(playlistTitle, song);
-		RenderToast('Track was added to playlist');
+		RenderToast('Pista agregada al Playlist');
 		navigation.goBack();
 	}
 
 	function onPlaylistPress(playlistName) {
 		let { song } = route.params;
 		let filtered = playlists[playlistName].filter((file) => file.id === song.id);
-		if (filtered.length > 0) RenderToast('This track is already in this playlist');
+		if (filtered.length > 0) RenderToast('Esta pista ya está en su playlist');
 		else addSong(playlistName, song);
 	}
 
@@ -31,7 +31,7 @@ function AddToPlayList(props) {
 	if (keys.length === 0) {
 		return (
 			<EmptyWrapper>
-				<EmptyText>{"You don't have any playlists yet"}</EmptyText>
+				<EmptyText>{"Todavía no tiene ningún playlists"}</EmptyText>
 			</EmptyWrapper>
 		);
 	}
@@ -40,7 +40,7 @@ function AddToPlayList(props) {
 			{keys.map((key, index) => (
 				<ListItem
 					title={key}
-					subtitle={`${playlists[key].length} tracks`}
+					subtitle={`${playlists[key].length} pistas`}
 					onPress={() => onPlaylistPress(key)}
 					iconProps={playlistIcon}
 					key={(key + index).toString()}
