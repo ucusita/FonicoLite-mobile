@@ -39,7 +39,7 @@ function TracksScreen(props) {
 	const renderMargin = currentTrack.id !== '000' ? { marginBottom: 60, flex: 1 } : { flex: 1 };
 
 	if (props.mediaLoaded) {
-		if (props.media.length > 0) {
+		if (props.media && props.media.length > 0) {
 			return (
 				<View style={renderMargin}>
 					{/* <QuickScrollList
