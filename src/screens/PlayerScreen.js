@@ -25,13 +25,13 @@ function PlayerScreen(props) {
 			<Gradient colors={[`${theme.bgTrans}0.35)`, `${theme.bgTrans}0.8)`]}>
 				<Header>
 					<StyledIcon {...icons.collapse} onPress={navigation.goBack} />
-					<HeaderText>now playing</HeaderText>
+					<HeaderText>Escuchando</HeaderText>
 					<OptionsMenu target={<StyledIcon {...icons.options} />} currentItem={currentTrack} />
 				</Header>
 				<Wrapper>
 					<CoverArt src={currentTrack.artwork} />
 					<TextWrapper>
-						<Title numberOfLines={1}>{currentTrack.title || 'unknown'}</Title>
+						<Title numberOfLines={1}>{currentTrack.title || 'desconocido'}</Title>
 						<Artist numberOfLines={1}>{currentTrack.artist}</Artist>
 					</TextWrapper>
 					<ProgressSlider />

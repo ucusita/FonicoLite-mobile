@@ -21,7 +21,7 @@ function FoldersScreen(props) {
 		return keys.map((key, index) => (
 			<ListItem
 				title={key}
-				subtitle={`${data[key].length} tracks`}
+				subtitle={`${data[key].length} pistas`}
 				key={(key + index).toString()}
 				onPress={() => onListItemPress(key, data[key])}
 				iconProps={folderIcon}

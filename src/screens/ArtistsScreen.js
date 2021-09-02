@@ -34,7 +34,7 @@ function ArtistsScreen(props) {
 	if (props.artists.length === 0) {
 		return (
 			<EmptyWrapper>
-				<Text>Oops! Nothing to show here</Text>
+				<Text>Nada para mostrar por aquí</Text>
 			</EmptyWrapper>
 		);
 	}

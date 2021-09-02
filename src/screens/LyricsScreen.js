@@ -30,7 +30,7 @@ function LyricsScreen(props) {
 				<Lyrics>{lyrics}</Lyrics>
 			</ScrollView>
 		) : (
-			<RenderActivityIndicator text="fetching lyrics" />
+			<RenderActivityIndicator text="obteniendo letras" />
 		);
 	}
 
@@ -38,7 +38,7 @@ function LyricsScreen(props) {
 		<View style={{ flex: 1 }}>
 			{props.error ? (
 				<ErrorWrapper>
-					<ErrorText>{'Oops! No lyrics were found!'}</ErrorText>
+					<ErrorText>{'No hay letras todavía!'}</ErrorText>
 				</ErrorWrapper>
 			) : (
 				renderLyrics()

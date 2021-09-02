@@ -12,7 +12,7 @@ function SearchInput(props) {
 		<Wrapper>
 			<StyledIcon {...searchIcon} />
 			<Input
-				placeholder="Artists, songs, or albums"
+				placeholder="Artista, canción, o categoría"
 				allowFontScaling={false}
 				clearButtonMode="while-editing"
 				selectionColor={`${theme.fgTrans}0.75)`}

@@ -43,18 +43,18 @@ function LibraryStack(props) {
 
 	return (
 		<Stack.Navigator headerMode="screen" screenOptions={screenOptions}>
-			<Stack.Screen name="library" component={Library} options={{ title: 'Your library' }} />
+			<Stack.Screen name="library" component={Library} options={{ title: 'Su librería' }} />
 			<Stack.Screen
 				name="playlists"
 				component={PlaylistsScreen}
 				options={{ title: 'Playlists' }}
 			/>
-			<Stack.Screen name="artists" component={ArtistsScreen} options={{ title: 'Artists' }} />
-			<Stack.Screen name="albums" component={AlbumsScreen} options={{ title: 'Albums' }} />
-			<Stack.Screen name="folders" component={FoldersScreen} options={{ title: 'Folders' }} />
+			<Stack.Screen name="artists" component={ArtistsScreen} options={{ title: 'Artistas' }} />
+			<Stack.Screen name="albums" component={AlbumsScreen} options={{ title: 'Albumes' }} />
+			<Stack.Screen name="folders" component={FoldersScreen} options={{ title: 'Carpetas' }} />
 			<Stack.Screen name="playlist" component={ShowPlaylistScreen} options={headerTitle} />
 			<Stack.Screen name="content" component={ShowContentScreen} options={headerTitle} />
-			<Stack.Screen name="about" component={AboutScreen} options={{ title: 'About' }} />
+			<Stack.Screen name="about" component={AboutScreen} options={{ title: 'Acerca' }} />
 		</Stack.Navigator>
 	);
 }

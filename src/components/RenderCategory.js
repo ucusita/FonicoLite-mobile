@@ -10,7 +10,7 @@ const SCREEN_WIDTH = Dimensions.get('window').width;
 
 function RenderCategory(props) {
 	const imageSource = props.image ? { uri: props.image } : placeholder;
-	const subText = `${props.numOfTracks} ${props.numOfTracks > 1 ? 'tracks' : 'track'}`;
+	const subText = `${props.numOfTracks} ${props.numOfTracks > 1 ? 'pistas' : 'pista'}`;
 	return (
 		<Touchable onPress={props.onPress} activeOpacity={0.4}>
 			<Thumbnail source={imageSource} />

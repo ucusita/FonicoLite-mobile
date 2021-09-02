@@ -2,16 +2,16 @@ import { Alert, Linking } from 'react-native';
 
 export default function (e) {
 	Alert.alert(
-		'Oops! an error ocurred',
-		'Send error log to developers?',
-		[{ text: 'Send', onPress: () => mailError(e) }],
+		'¡Epa! ocurrió un error',
+		'¿Envío el listado de errores a los desarrolladores?',
+		[{ text: 'Enviar', onPress: () => mailError(e) }],
 		{ cancelable: true }
 	);
 }
 
 function mailError(e) {
 	Linking.openURL(
-		`mailto:faisalarshed28@gmail.com?subject=FonicoLite error log&body=LOG\n\n${JSON.stringify(
+		`mailto:conect2000@hotmail.com?subject=FonicoLite error log&body=LOG\n\n${JSON.stringify(
 			e
 		)}`
 	);

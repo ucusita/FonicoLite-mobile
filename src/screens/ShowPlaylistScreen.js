@@ -36,7 +36,7 @@ function ShowPlaylistScreen(props) {
 		</View>
 	) : (
 		<EmptyWrapper>
-			<EmptyText>Oops! This playlist is empty</EmptyText>
+			<EmptyText>Epa! Este playlist está vacio</EmptyText>
 		</EmptyWrapper>
 	);
 }

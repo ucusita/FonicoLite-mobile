@@ -35,14 +35,14 @@ function SettingsScreen(props) {
 
 	function onPressReport() {
 		Linking.openURL(
-			'mailto:faisalarshed28@gmail.com?subject=FonicoLite bug report&body=Device Manufacturer %26 Model: \n\n%0D%0AYour issue: %20'
+			'mailto:conect2000@hotmail.com?subject=FonicoLite reporte de error&body=Fabricante %26 Modelo: \n\n%0D%0ASu issue: %20'
 		);
 	}
 
 	function onPressShare() {
 		Share.open({
 			message:
-				'Hey! Check out FonicoLite\nhttps://play.google.com/store/apps/details?id=com.infotronica.fonicolite'
+				'¡Hola! Dale un vistazo a FonicoLite\nhttps://play.google.com/store/apps/details?id=com.infotronica.fonicolite'
 		});
 	}
 
@@ -102,14 +102,14 @@ function SettingsScreen(props) {
 				inputPlaceholder={settings.excludeFoldersDialog.placeholder}
 				title={settings.excludeFoldersDialog.title}
 				name={skippedFolders}
-				saveButtonTitle="Save"
+				saveButtonTitle="Grabar"
 				description={settings.excludeFoldersDialog.description}
 			/>
 
 			<ConfirmDialog
 				isVisible={isDialogVisible}
 				title={settings.clearCacheConfirm.title}
-				buttonTitle="Clear"
+				buttonTitle="Limpiar"
 				description={settings.clearCacheConfirm.subtitle}
 				onCancel={() => setDialogVisible(false)}
 				onConfirm={onConfirmClear}

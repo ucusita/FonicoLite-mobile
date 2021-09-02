@@ -7,8 +7,8 @@ export const getStoragePermission = async () => {
 			PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE
 		],
 		{
-			title: 'FonicoLite Storage Permission',
-			message: 'FonicoLite needs to access your storage'
+			title: 'FonicoLite Permiso de almacenamiento',
+			message: 'FonicoLite necesita acceder a su almacenamiento'
 		}
 	);
 
@@ -16,8 +16,8 @@ export const getStoragePermission = async () => {
 		return;
 	} else {
 		Alert.alert(
-			'Permission required',
-			'Allow FonicoLite to access your storage',
+			'Permisos requeridos',
+			'Permite a FonicoLite acceder a tu almacenamiento',
 			[{ text: 'OK', onPress: async () => await getStoragePermission() }],
 			{ cancelable: false }
 		);

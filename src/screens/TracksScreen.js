@@ -76,7 +76,7 @@ function TracksScreen(props) {
 		return (
 			<MessageWrapper>
 				<Message numberOfLines={2}>
-					{"Oops! FonicoLite couldn't find any music on your device"}
+					{"¡Epa! FonicoLite no pudo encontrar música en su dispositivo"}
 				</Message>
 			</MessageWrapper>
 		);

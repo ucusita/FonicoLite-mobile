@@ -28,9 +28,9 @@ function PlaylistsScreen(props) {
 				props.createPlaylist(playlistName);
 				setModal(false);
 			} else {
-				RenderToast('A playlist with the same name already exists');
+				RenderToast('Ya existe un playlisto con el mismo nombre');
 			}
-		} else RenderToast('Playlists cannot be untitled');
+		} else RenderToast('Los Playlists deben tener un título');
 	}
 
 	function onListItemPress(title, content) {
@@ -51,9 +51,9 @@ function PlaylistsScreen(props) {
 				isVisible={isModalVisible}
 				onPressSave={onPressSave}
 				onPressCancel={() => setModal(false)}
-				inputPlaceholder="Give your playlist a name"
-				saveButtonTitle="Create"
-				title="Create playlist"
+				inputPlaceholder="Déle a su playlist un nombre"
+				saveButtonTitle="Crear"
+				title="Crear playlist"
 			/>
 			<PlaylistOptions
 				selectedPlaylist={optionsModal.name}
@@ -64,7 +64,7 @@ function PlaylistsScreen(props) {
 				{keys.map((key, index) => (
 					<ListItem
 						title={key}
-						subtitle={`${playlists[key].length} tracks`}
+						subtitle={`${playlists[key].length} pistas`}
 						key={String(key + index)}
 						onPress={() => onListItemPress(key, playlists[key])}
 						iconProps={playlistIcon}

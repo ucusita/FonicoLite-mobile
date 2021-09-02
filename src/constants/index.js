@@ -1,33 +1,33 @@
-export const scanMessage = 'finding music';
+export const scanMessage = 'buscando música';
 
 export const settings = {
 	darkMode: {
-		title: 'Dark Mode',
-		subtitle: 'Changes app theme to dark'
+		title: 'Modo oscuro',
+		subtitle: 'Cambiar la app al modo oscuro'
 	},
 	excludeFolders: {
-		title: 'Folders to skip'
+		title: 'Carpetas a saltear'
 	},
 	clearCache: {
-		title: 'Clear cache',
-		subtitle: 'Delete album art cache to free up space'
+		title: 'Limpiar el cache',
+		subtitle: 'Borrar del cache un álbum para liberar espacio'
 	},
 	reportABug: {
-		title: 'Report an issue',
-		subtitle: "Tell us what's wrong with the app"
+		title: 'Reportar un problema',
+		subtitle: "Cuéntenos que está mal con la app"
 	},
 	about: {
-		title: 'About',
-		subtitle: 'Info about FonicoLite'
+		title: 'Acerca',
+		subtitle: 'Info sobre FonicoLite'
 	},
 	excludeFoldersDialog: {
-		title: 'Folders to skip',
-		description: "Enter the names of the folders that shouldn't be scanned (separate by comma)",
-		placeholder: 'Folder names separated by a comma'
+		title: 'Carpetas a saltear',
+		description: "Ingrese el nombre de las carpetas que no deberán ser escaneadas (separadas por comas)",
+		placeholder: 'Nombres de carpetas separados por comas'
 	},
 	clearCacheConfirm: {
-		title: 'Confirm Cache Purge',
-		subtitle: 'Are you sure you want to clear covers cache?'
+		title: 'Confirme Purga de Cache',
+		subtitle: 'Está seguro que quiere limpiar la caché?'
 	},
-	share: 'Share FonicoLite'
+	share: 'Compartir FonicoLite'
 };

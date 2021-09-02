@@ -46,7 +46,7 @@ function SearchScreen(props) {
 		) : (
 			<PlaceholderWrapper>
 				<SearchIcon {...styles.searchIcon} />
-				<PlaceholderText>Type something into the search bar</PlaceholderText>
+				<PlaceholderText>Escriba algo en la barra de búsquedas</PlaceholderText>
 			</PlaceholderWrapper>
 		);
 	}
@@ -54,7 +54,7 @@ function SearchScreen(props) {
 	return (
 		<Wrapper>
 			<TitleWrapper>
-				<Title>Search</Title>
+				<Title>Buscar</Title>
 			</TitleWrapper>
 			<SearchWrapper>
 				<SearchInput

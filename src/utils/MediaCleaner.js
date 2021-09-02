@@ -26,8 +26,8 @@ export default function cleanupMedia(media) {
 			title:
 				mediaFiles[i].title || mediaFiles[i].fileName.replace(/.mp3|.aac|.wav|.amr|.flac/, ''),
 			artwork: mediaFiles[i].cover || null,
-			artist: mediaFiles[i].author === '<unknown>' ? 'unknown' : mediaFiles[i].author,
-			album: mediaFiles[i].album === '<unknown>' ? 'unknown' : mediaFiles[i].album,
+			artist: mediaFiles[i].author === '<unknown>' ? 'desconocido' : mediaFiles[i].author,
+			album: mediaFiles[i].album === '<unknown>' ? 'desconocido' : mediaFiles[i].album,
 			index: i,
 			folder: folderName
 			// pitchAlgorithm: PITCH_ALGORITHM_MUSIC

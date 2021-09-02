@@ -19,19 +19,19 @@ function Library(props) {
 				titleStyle={styles.title}
 			/>
 			<ListItem
-				title="Artists"
+				title="Artistas"
 				onPress={() => props.navigation.navigate('artists')}
 				iconProps={icons.artists}
 				titleStyle={styles.title}
 			/>
 			<ListItem
-				title="Albums"
+				title="Albumes"
 				onPress={() => props.navigation.navigate('albums')}
 				iconProps={icons.albums}
 				titleStyle={styles.title}
 			/>
 			<ListItem
-				title="Folders"
+				title="Carpetas"
 				onPress={() => props.navigation.navigate('folders')}
 				iconProps={icons.folders}
 				titleStyle={styles.title}

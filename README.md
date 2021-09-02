@@ -2,10 +2,10 @@
   <img src="https://raw.githubusercontent.com/ucusita/FonicoLite-mobile/master/docs/logo.png" height=100/>
 </p>
 
-FonicoLite is a light-weight and minimalist music player for Android. Focused on aesthetics and simplicity.
+FonicoLite es parte del desarrollo de Fónico. Reproductor de música cristiana,
 
 <p align="center">
-  <a href="https://play.google.com/store/apps/details?id=com.infotronica.fonicolite">Download</a>
+  <a href="https://play.google.com/store/apps/details?id=com.infotronica.fonicolite">Descargar</a>
 <p>
 
 ## Powered by
@@ -14,10 +14,3 @@ FonicoLite is a light-weight and minimalist music player for Android. Focused on
 -  Redux
 -  Styled Components
 
-## Screenshots
-
-![Screenshot](https://raw.githubusercontent.com/farshed/FonicoLite-mobile/master/docs/screenshots.png)
-
-## Todo
-
-See [TODO](https://github.com/farshed/FonicoLite-mobile/issues/4)

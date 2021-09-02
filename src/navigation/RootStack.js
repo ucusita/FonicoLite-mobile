@@ -22,7 +22,7 @@ function RootStack() {
 			<Modal.Screen
 				name="addToPlaylist"
 				component={AddToPlaylist}
-				options={{ title: 'Add to playlist' }}
+				options={{ title: 'Agregar al playlist' }}
 			/>
 			<Modal.Screen name="lyrics" component={LyricsScreen} />
 		</Modal.Navigator>
