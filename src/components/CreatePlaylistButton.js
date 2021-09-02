@@ -11,7 +11,7 @@ function CreatePlaylistButton(props) {
 		<TouchableNativeFeedback onPress={props.onPress}>
 			<Wrapper>
 				<AddIcon {...addIcon} />
-				<Text>Create new playlist</Text>
+				<Text>Crear nuevo playlist</Text>
 			</Wrapper>
 		</TouchableNativeFeedback>
 	);
